@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>contract</display-name>
+
+<welcome-file-list>
+	<welcome-file>login.jsp</welcome-file>
+
+</welcome-file-list>
+
+<servlet>
+<servlet-name>indexServlet</servlet-name>
+<servlet-class>com.ruanko.web.IndexServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>indexServlet</servlet-name>
+<url-pattern>/indexServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  	<servlet-name>toRegisterUser</servlet-name>
+  	<servlet-class>com.ruanko.web.ToRegisterUserServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>toRegisterUser</servlet-name>
+  	<url-pattern>/toRegisterUser</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>registerUser</servlet-name>
+  	<servlet-class>com.ruanko.web.RegisterUserServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerUser</servlet-name>
+  	<url-pattern>/registerUser</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>toRegisterAdmin</servlet-name>
+  	<servlet-class>com.ruanko.web.ToRegisterAdminServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>toRegisterAdmin</servlet-name>
+  	<url-pattern>/toRegisterAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>registerAdmin</servlet-name>
+  	<servlet-class>com.ruanko.web.RegisterAdminServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerAdmin</servlet-name>
+  	<url-pattern>/registerAdmin</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+   <servlet>
+  	<servlet-name>ToLoginUser</servlet-name>
+  	<servlet-class>com.ruanko.web.ToLoginUserServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ToLoginUser</servlet-name>
+  	<url-pattern>/ToLoginUser</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  	<servlet-name>loginUser</servlet-name>
+  	<servlet-class>com.ruanko.web.LoginUserServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginUser</servlet-name>
+  	<url-pattern>/loginUser</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+  	<servlet-name>ToLoginAdmin</servlet-name>
+  	<servlet-class>com.ruanko.web.ToLoginAdminServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ToLoginAdmin</servlet-name>
+  	<url-pattern>/ToLoginAdmin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>loginAdmin</servlet-name>
+  	<servlet-class>com.ruanko.web.LoginAdminServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginAdmin</servlet-name>
+  	<url-pattern>/loginAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ToDraft</servlet-name>
+  	<servlet-class>com.ruanko.web.ToDraftServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ToDraft</servlet-name>
+  	<url-pattern>/ToDraft</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  <servlet>
+  	<servlet-name>draft</servlet-name>
+  	<servlet-class>com.ruanko.web.DraftServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>draft</servlet-name>
+  	<url-pattern>/draft</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>toCounterSign</servlet-name>
+  	<servlet-class>com.ruanko.web.ToAddHQOptionServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>toCounterSign</servlet-name>
+  	<url-pattern>/toCounterSign</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>CounterSign</servlet-name>
+  	<servlet-class>com.ruanko.web.AddHQOptionServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CounterSign</servlet-name>
+  	<url-pattern>/CounterSign</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>ModifyReject</servlet-name>
+  	<servlet-class>com.ruanko.web.ModifyRejectServlet</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ModifyReject</servlet-name>
+  	<url-pattern>/ModifyReject</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Sign</servlet-name>
+  	<servlet-class>com.ruanko.web.SignServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>Sign</servlet-name>
+  	<url-pattern>/Sign</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>denied</servlet-name>
+  	<servlet-class>com.ruanko.web.DeniedServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>denied</servlet-name>
+  	<url-pattern>/denied</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>alter</servlet-name>
+  	<servlet-class>com.ruanko.web.AlterServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>alter</servlet-name>
+  	<url-pattern>/alter</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>dele</servlet-name>
+  	<servlet-class>com.ruanko.web.DeleteServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>dele</servlet-name>
+  	<url-pattern>/dele</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>search</servlet-name>
+  	<servlet-class>com.ruanko.web.SearchServlet</servlet-class>
+ </servlet>
+  <servlet-mapping>
+  	<servlet-name>search</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
